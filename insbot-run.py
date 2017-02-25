@@ -2,7 +2,7 @@
 import sys, os
 sys.path.append(os.path.join(sys.path[0],'src'))
 
-from instabot import InstaBot
+from insbot import InsBot
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -20,10 +20,10 @@ bot_args = parser.parse_args()
 
 #########################
 ## Example command line:
-## instagram-bot.py -u USERNAME -pw PASSWORD -l 1000 -f 500 -un 800 -t 0000000000.0000000.00000000000000000000000000000000 -c -log
+## insbot-run.py -u USERNAME -pw PASSWORD -l 1000 -f 500 -un 800 -t 0000000000.0000000.00000000000000000000000000000000 -c -log
 #########################
 
-bot = InstaBot(login=bot_args.username, password=bot_args.password,
+bot = InsBot(login=bot_args.username, password=bot_args.password,
                like_per_day=bot_args.likes,
                comments_per_day=0,
                tag_list=['nature', 'view', 'earth', 'planet', 'f4f', 'follow4follow'],
