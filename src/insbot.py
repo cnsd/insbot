@@ -306,7 +306,7 @@ class InsBot:
                 if like.status_code == 200:
                     last_liked_media_id = media_id
                     self.like_counter += 1
-                    log_string = "Liked %i (No.%i)" % (media_id, self.like_counter)
+                    log_string = "Liked %s (No.%i)" % (media_id, self.like_counter)
                     self.write_log(log_string)
                 else:
                     log_string = "Status code != 200, Sleeping 5 mins to avoid ban."
