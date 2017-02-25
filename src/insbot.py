@@ -377,7 +377,7 @@ class InsBot:
                 follow = self.s.post(url_follow)
                 if follow.status_code == 200:
                     self.follow_counter += 1
-                    log_string = "Followed: %s #%i.\a" % (user_id, self.follow_counter)
+                    log_string = "Followed: %s #%i." % (user_id, self.follow_counter)
                     self.write_log(log_string)
                 return follow
             except:
