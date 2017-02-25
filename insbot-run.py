@@ -26,7 +26,7 @@ bot_args = parser.parse_args()
 bot = InsBot(login=bot_args.username, password=bot_args.password,
                like_per_day=bot_args.likes,
                comments_per_day=0,
-               tag_list=['nature', 'view', 'earth', 'planet', 'f4f', 'follow4follow'],
+               tag_list=['tags', 'you', 'want', 'the', 'bot', 'to', 'scrape'],
                max_like_for_one_tag=bot_args.maxlikesfortag,
                follow_per_day=bot_args.follows,
                unfollow_per_day=bot_args.unfollows,
