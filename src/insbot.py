@@ -410,7 +410,7 @@ class InsBot:
             uid = user_pointer['id']
             uname = user_pointer['username']
             if user_pointer in self.start_followers_list:
-                write_log('%s(%s) is following you. Aborting unfollow.' % (uname, uid))
+                self.write_log('%s(%s) is following you. Aborting unfollow.' % (uname, uid))
             else:
                 self.write_log('Trying to unfollow %s(%s).' % (uname, uid))
                 self.unfollow(int(uid))
